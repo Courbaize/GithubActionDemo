@@ -1,4 +1,4 @@
-name: GitHub Action Demo
+name: GitHub Action Demo 1
 on: push
 jobs: 
   premier-job:
@@ -6,4 +6,10 @@ jobs:
     runs-on: Ubuntu-latest
     steps: 
       - run: echo "Premier job"
-      - run: echo "Fin"
+      - run: echo "Fin premier"
+  deuxieme-job:
+    name: Deuxieme Job
+    runs-on: Ubuntu-latest
+    steps: 
+      - run: echo "Deuxieme job"
+      - run: echo "Fin deuxieme"
